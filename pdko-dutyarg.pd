@@ -1,0 +1,18 @@
+#N canvas 389 353 761 446 12;
+#X obj 37 93 list split 3;
+#X msg 37 125 \$3;
+#X obj 35 155 f;
+#X msg 100 125 50;
+#X obj 34 203 outlet;
+#X obj 45 57 pdkvabs/dkargs 2;
+#X obj 44 15 loadbang;
+#X obj 234 23 inlet;
+#X text 296 27 new duty arg;
+#X connect 0 0 1 0;
+#X connect 0 2 3 0;
+#X connect 1 0 2 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 5 0 0 0;
+#X connect 6 0 5 0;
+#X connect 7 0 2 0;
